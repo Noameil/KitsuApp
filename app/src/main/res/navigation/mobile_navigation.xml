@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_manga">
+
+    <fragment
+        android:id="@+id/navigation_manga"
+        android:name="hackeru.noameil.kitsuapp.ui.manga.MangaFragment"
+        android:label="@string/title_manga"
+        tools:layout="@layout/fragment_manga" >
+        <action
+            android:id="@+id/action_manga_to_manga_description"
+            app:destination="@id/navigation_manga_descrition" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_anime"
+        android:name="hackeru.noameil.kitsuapp.ui.anime.AnimeFragment"
+        android:label="@string/title_anime"
+        tools:layout="@layout/fragment_anime" >
+        <action
+            android:id="@+id/action_anime_to_anime_description"
+            app:destination="@id/navigation_anime_description" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_anime_description"
+        android:name="hackeru.noameil.kitsuapp.ui.anime.AnimeDescriptionFragment"
+        android:label="@string/title_anime_description"
+        tools:layout="@layout/fragment_anime_description">
+        <action
+            android:id="@+id/action_anime_description_to_anime"
+            app:destination="@id/navigation_anime" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_manga_descrition"
+        android:name="hackeru.noameil.kitsuapp.ui.manga.MangaDescriptionFragment"
+        android:label="@string/title_manga_description"
+        tools:layout="@layout/fragment_manga_description">
+        <action
+            android:id="@+id/action_manga_description_to_manga"
+            app:destination="@id/navigation_manga" />
+    </fragment>
+</navigation>

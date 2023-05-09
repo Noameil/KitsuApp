@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KitsuApp</string>
+    <string name="title_manga">Manga</string>
+    <string name="title_manga_description">Manga Description</string>
+    <string name="title_anime">Anime</string>
+    <string name="title_anime_description">Anime Description</string>
+    <string name="title_categories">Categories</string>
+    <string name="back">Back</string>
+    <string name="trending">TRENDING</string>
+    <string name="latest_releases">LATEST RELEASES</string>
+    <string name="description">Description:</string>
+    <string name="defauly_anime_poster">Defauly Anime Poster</string>
+    <string name="default_manga_poster">Default Manga Poster</string>
+    <string name="manga_poster">Manga Poster</string>
+    <string name="anime_poster">Anime Poster</string>
+</resources>
